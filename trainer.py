@@ -16,7 +16,7 @@ import os.path as osp
 def train(args):
 
     time_str = datetime.datetime.strftime(datetime.datetime.today(), '%Y-%m-%d %H-%M-%S')
-    path = "paper_logs/{}/{}".format(args['model_name'], args['dataset'])
+    path = "paper_logs/{}/{}/{}".format(args['model_name'], args['dataset'], args['prefix'])
 
     args['time_str'] = time_str
     args['path'] = path

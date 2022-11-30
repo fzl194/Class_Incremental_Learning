@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="848a2478-fd84-43b6-8a64-5174277ecc51" name="121.4.30.38">
+        <fileTransfer rootFolder="/home/y30201048/Desktop/fzl/Incremental" accessType="SFTP" host="121.4.30.38" port="6001" sshConfigId="31a11ba6-a898-4c32-a679-802bbe3513e8" sshConfig="y30201048@121.4.30.38:6001 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

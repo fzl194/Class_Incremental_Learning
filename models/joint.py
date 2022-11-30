@@ -16,7 +16,7 @@ from utils.loss_function import TripletLoss
 
 
 
-class Finetuning(BaseLearner):
+class Joint(BaseLearner):
 
     def __init__(self, args):
         super().__init__(args)
@@ -43,7 +43,7 @@ class Finetuning(BaseLearner):
         logging.info('Learning on {}-{}'.format(self._known_classes, self._total_classes))
 
         # Loader
-        train_dataset = data_manager.get_dataset(np.arange(self._known_classes, self._total_classes),
+        train_dataset = data_manager.get_dataset(np.arange(0, self._total_classes),
                                                      source='train', mode='train')
 
         test_dataset = data_manager.get_dataset(np.arange(0, self._total_classes), source='test', mode='test')

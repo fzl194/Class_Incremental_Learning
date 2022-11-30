@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf3bf4ed-bb4a-444a-a1a8-7b84e5af5f07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exps/replay/cifar100_B0_2tasks.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/replay.py" afterDir="false" />
+    <list default="true" id="bf3bf4ed-bb4a-444a-a1a8-7b84e5af5f07" name="Changes" comment="replay">
+      <change afterPath="$PROJECT_DIR$/exps/finetuning/cifar100_B0_5tasks.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exps/joint/cifar100_B0_2tasks.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/joint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exps/replay/cifar100_B0_2tasks.yml" beforeDir="false" afterPath="$PROJECT_DIR$/exps/replay/cifar100_B0_2tasks.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/finetuning.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/finetuning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/factory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,16 +48,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/exps/replay" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/exps/joint" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\科研\我的论文\Incremental\exps\replay" />
+      <recent name="E:\科研\我的论文\Incremental\exps\joint" />
       <recent name="E:\科研\我的论文\Incremental\models" />
       <recent name="E:\科研\我的论文\Incremental\exps\finetuning" />
+      <recent name="E:\科研\我的论文\Incremental\exps\replay" />
       <recent name="E:\科研\我的论文\Incremental" />
-      <recent name="E:\科研\我的论文\Incremental\convs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\科研\我的论文\Incremental\paper_logs\replay\cifar100\CIFAR-100-B0-2Tasks" />
+      <recent name="E:\科研\我的论文\Incremental\paper_logs\finetuning\cifar100\CIFAR-100-B0-2Tasks" />
     </key>
   </component>
   <component name="RunManager">
@@ -89,8 +96,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669705710388</updated>
-      <workItem from="1669705711543" duration="14048000" />
+      <workItem from="1669705711543" duration="20821000" />
     </task>
+    <task id="LOCAL-00001" summary="replay">
+      <created>1669776259317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669776259317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +122,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="replay" />
+    <option name="LAST_COMMIT_MESSAGE" value="replay" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Incremental$main.coverage" NAME="main Coverage Results" MODIFIED="1669775641781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Incremental$main.coverage" NAME="main Coverage Results" MODIFIED="1669795141789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
