@@ -1,0 +1,67 @@
+#log 文件前缀
+prefix: CIFAR-100-B0-2Tasks
+#数据集
+dataset: cifar100
+#旧样例存储大小
+memory_size: 2000
+#每个类别存储样本数量
+memory_per_class: 20
+#fixed_memory=true，表示每类样本相同，=false表示样本总量保持为memory_size
+fixed_memory: false
+#类顺序是否打乱
+shuffle: true
+#随机种子
+seed: 1995
+#base class数量
+init_cls: 50
+#每次增加数量
+increment: 50
+#选择方法名称
+model_name: finetuning
+#网络模型
+convnet_type: cifar_resnet32
+#GPU id
+device: '0'
+#重复次数
+repeat: 1
+#每类数量
+num_imgs: 500
+#打印test频率
+print_fre: 1
+#存储模型
+save: True
+
+
+base_args:
+  batch_size: 128
+  num_workers: 4
+  epoch: 160
+  lr_conv: 0.1
+  lr_fc: 0.1
+  momentum: 0.9
+  weight_decay: 0.0005
+  milestones: [80, 120]
+  lr_decay: 0.1
+  warmup: True
+  warmup_epoch: 10
+
+train_args:
+  batch_size: 128
+  num_workers: 4
+  epoch: 160
+  lr_conv: 0.1
+  lr_fc: 0.1
+  momentum: 0.9
+  weight_decay: 0.0005
+  milestones: [80, 120]
+  lr_decay: 0.1
+  warmup: True
+  warmup_epoch: 10
+
+
+method_args:
+  pretrained: False
+
+  TripletLoss: False
+  margin: 0.3
+  triplet_weight: 0
