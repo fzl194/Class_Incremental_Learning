@@ -27,7 +27,7 @@ def load_json(settings_path):
 
 def setup_parser():
     parser = argparse.ArgumentParser(description='incremental learning algorithms.')
-    parser.add_argument('--config', type=str, default='exps/finetuning/cifar100_B0_2tasks.yml',
+    parser.add_argument('--config', type=str, default='exps/replay/cifar100_B0_2tasks.yml',
                         help='Json file of settings.')
     return parser
 
