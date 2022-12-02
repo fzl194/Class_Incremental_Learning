@@ -1,5 +1,5 @@
 #log 文件前缀
-prefix: CIFAR-100-B0-2Tasks
+prefix: CIFAR-100-B0-10Tasks
 #数据集
 dataset: cifar100
 #旧样例存储大小
@@ -11,13 +11,13 @@ fixed_memory: false
 #类顺序是否打乱
 shuffle: true
 #随机种子
-seed: 1995
+seed: 1993
 #base class数量
-init_cls: 50
+init_cls: 10
 #每次增加数量
-increment: 50
+increment: 10
 #选择方法名称
-model_name: joint
+model_name: replay
 #网络模型
 convnet_type: cifar_resnet32
 #GPU id

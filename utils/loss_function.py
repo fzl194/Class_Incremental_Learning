@@ -51,3 +51,8 @@ class TripletLoss(nn.Module):
         # dist_p = torch.mean(dist_ap).data[0]
         # dist_n = torch.mean(dist_an).data[0]
         return loss#$, prec, dist_p, dist_n
+
+def _KD_loss(pred, soft, T):
+    pred = torch.log_softmax(pred/T, dim=1)
+    soft = torch.softmax(soft/T, dim=1)
+    return -1 * torch.mul(soft, pred).sum()/pred.shape[0]
